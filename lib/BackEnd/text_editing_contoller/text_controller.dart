@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: MyApp(),
     ),
   );
@@ -23,28 +23,28 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Tutorial - googleflutter.com'),
+          title: const Text('Flutter Tuttttorial - googleflutter.com'),
         ),
         body: Padding(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Column(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: TextField(
                     controller: nameController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'User Name',
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: TextField(
                     obscureText: true,
                     controller: passwordController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Password',
                     ),
@@ -53,7 +53,7 @@ class _MyAppState extends State<MyApp> {
                 RaisedButton(
                   textColor: Colors.white,
                   color: Colors.blue,
-                  child: Text('Login'),
+                  child: const Text('Login'),
                   onPressed: () {
                     print(nameController.text);
                     print(passwordController.text);
